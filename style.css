@@ -150,6 +150,7 @@ box-sizing: border-box;
 @media only screen and (max-width: 600px){
     .main-login{
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     .left-login > h1{
@@ -164,6 +165,7 @@ box-sizing: border-box;
     .right-login {
         width: 100%;
         height: auto;
+        align-items: flex-start;
     }
 
     .right-login > h1 {
@@ -171,8 +173,10 @@ box-sizing: border-box;
     }
 
     .left-login-image {
-        width: 30vh;
+        width: 22vh;
         margin-bottom: 10px;
+        margin-top: 30px;
+        align-items: flex-start;
     }
 
     .anima {
@@ -306,13 +310,13 @@ box-sizing: border-box;
 }
 
 .left-cadastro-image {
-    width: 20vw;
+    width: 15vw;
     padding: 20px;
 }
 
 @media only screen and (max-width: 950px){
     .card-cadastro {
-        width: 80%;
+        width: 85%;
         padding: 20px 25px;
         }
         
@@ -353,6 +357,7 @@ box-sizing: border-box;
 @media only screen and (max-width: 600px){
     .main-cadastro{
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     .left-cadastro > h1{
@@ -370,7 +375,7 @@ box-sizing: border-box;
 
     .right-cadastro {
         width: 100%;
-        height: auto;
+        height: 80%;
     }
 
     .right-cadastro > h1 {
@@ -380,4 +385,5 @@ box-sizing: border-box;
     .left-cadastro-image {
         width: 28vh;
     }
+    
 }
