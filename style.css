@@ -94,7 +94,7 @@ color: #f0ffff94;
 }
 
 
-button:hover {
+input[type="submit"]:hover {
     background: #12cf77;
 }
 

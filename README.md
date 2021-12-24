@@ -2,6 +2,8 @@
   <img src = "imgReadMe.png" alt = "mockup" />
 </p>
 
+<br>
+
 <div align = "center">
 <h1>XBank - Banco Digital</h1>
 </div>
@@ -14,26 +16,23 @@
 	✅ XBank - Versão 1.0 ✅
 </h4>
 
-
 <br>
 
 <p align="center">
- <a href="#visao">Visão geral</a> •
- <a href="#leng">Linguagens</a> •
- <a href="#contato">Contato</a>  
+ <a href="#visao">• Visão geral</a> <br>
+ <a href="#leng">• Linguagens</a> <br>
+ <a href="#contato">• Contato</a>  
 </p>
-
 <br>
 <br>
-<br>
-
 
 <div id="visao">
 <h1>  Visão geral </h1>
 
-XBank possui um layout moderno e responsivo de um Banco Digital fictício, desenvolvido com HTML, CSS. O foco principal é treinar habilidades principalmente no desenvolvimento moderno com a presença de banco de dados em PHP e interações com JavaScript. 
+O XBank - Banco Digital, possui um layout moderno e responsivo, a homepage começa com a tela de login ou através de um link, permite ao usuário realizar um cadastro. Ao realizar o login, já conectado na página princial é possível ver o saldo da conta, realizar depósitos ou saques.
+Esse projeto foi desenvolvido com HTML e CSS na construção do conteúdo e layout, e também foi utilizado PHP e MySQL para fazer a ligação do site com o banco de dados.
+ O foco principal é treinar habilidades principalmente no desenvolvimento moderno com a presença de banco de dados e praticar algumas interações em JavaScript. 
 </div>
-<br>
 <br>
 <br>
 <br>
@@ -48,7 +47,6 @@ XBank possui um layout moderno e responsivo de um Banco Digital fictício, desen
    <img align="center" alt="Mateus-PHP" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg">
    <img align="center" alt="Mateus-MySql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
 </div>
-<br>
 <br>
 <br>
 <br>
