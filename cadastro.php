@@ -1,3 +1,28 @@
+<?php
+
+if(isset($_POST['submit'])) {
+
+  /*  
+    print_r($_POST['nome']);
+    print_r($_POST['sobrenome']);
+    print_r($_POST['cpf']);
+    print_r($_POST['dt_nasc']);
+    print_r($_POST['senha']); 
+    */
+
+    include_once('config.php');
+
+    $nome = $_POST['nome'];
+    $sobrenome = $_POST['sobrenome'];
+    $cpf = $_POST['cpf'];
+    $dt_nasc = $_POST['dt_nasc'];
+    $senha = $_POST['senha'];
+
+    $result = mysqli_query($conexao, "INSERT INTO clientes(nome,sobrenome,cpf,data_nasc,senha)
+    VALUES ('$nome','$sobrenome','$cpf','$dt_nasc','$senha')");    
+}
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,6 +36,7 @@
 </head>
 
 <body>
+    <form action="cadastro.php" method="POST">
     <div class="main-cadastro">
 
         <div class="left-cadastro">
@@ -20,6 +46,7 @@
         </div>
 
         <div class="right-cadastro">
+
             <div class="card-cadastro">
                 <h1>CADASTRO</h1>
                 <div class="textfield-cad">
@@ -28,7 +55,7 @@
                 </div>
                 <div class="textfield-cad">
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" name="Sobrenome" maxlength="40" placeholder="Sobrenome">
+                    <input type="text" name="sobrenome" maxlength="40" placeholder="Sobrenome">
                 </div>
                 <div class="textfield-cad">
                     <label for="cpf">CPF</label>
@@ -36,13 +63,13 @@
                 </div>
                 <div class="textfield-date">
                     <label for="data-nasc">Data de Nascimento</label>
-                    <input type="date" name="data-nasc">
+                    <input type="date" name="dt_nasc">
                 </div>
                 <div class="textfield-cad">
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
-                <input class="btn-cadastro" type="submit" value="Abrir conta">
+                <input class="btn-cadastro" type="submit" name="submit">
                 <!-- <button class="btn-cadastro">Abrir conta</button> -->
                 <div class="conta">
                     <a href="index.html">
@@ -50,6 +77,7 @@
                     </a>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 </body>
